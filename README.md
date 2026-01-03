@@ -3,6 +3,7 @@
 Offline-friendly MVP for coaches and athletes. Built with Next.js App Router + TypeScript and ExerciseDB proxy routes.
 
 ## Getting started
+1. Install dependencies: `npm install` (ESLint is pinned to 8.57.0 to satisfy the Next.js peer requirement and avoid ERESOLVE conflicts.)
 1. Install dependencies: `npm install`
 2. Create `.env.local` in the project root:
 ```
