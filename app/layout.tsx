@@ -1,22 +1,20 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import "./globals.css";
-import { NavBar } from "@/components/NavBar";
-import { PWARegister } from "@/components/PWARegister";
 
 export const metadata: Metadata = {
-  title: "Smart Gym Coach",
-  description: "Offline-ready Smart Gym Coach for coaches and athletes",
-  manifest: "/manifest.json",
+  title: "SmartGym",
+  description: "Simple launchpad for athletes and coaches",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: ReactNode;
+}) {
   return (
     <html lang="en">
-      <body>
-        <PWARegister />
-        <NavBar />
-        <main className="container">{children}</main>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
